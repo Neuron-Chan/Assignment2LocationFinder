@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateLocation() {
         String oldAddress = addressInput.getText().toString();
-        String newAddress = "New Address"; // Update to a new address
+        String newAddress = addressInput.getText().toString(); // Update to a new address
         databaseHelper.updateLocation(oldAddress, newAddress, 22.0, -55.0); // Example coordinates
         locationOutput.setText("Location updated.");
     }
